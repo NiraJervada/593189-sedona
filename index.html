@@ -10,7 +10,7 @@
 
     <header>
       <a class="header-logo">
-        <img src="img/logo.jpg" width="120" height="100" alt="Логотип Седоны">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
       </a>
       <nav>
         <ul class="site-navigation">
@@ -24,18 +24,48 @@
 
     <main>
       <div class="welcome">
-        <img src="img/welcome.jpg" width="900" height="500" alt="Добро пожаловать в Седону">
+        <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">
       </div>
       <div class="intro">
         <h1 class="page-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
-      <section class="advantages">
+      <!-- <section class="advantages">
+        <div class="white-font">
+          <h3>Настоящий<br>городок</h3>
+          <span class="numbers">- №1 -</span><br>
+          <p class="adv-description">Седона - не аттракцион для туристов,<br>там течёт своя жизнь</p>
+          <img src="img/sedona-town.jpg" width="800" height="256" alt="Городок Седона">
+        </div>
+        <div class="black-font">
+          <div class="housing">
+            <img src="img/icon-house.svg" width="75" height="72" alt="Жильё">
+            <h3>Жильё</h3>
+            <p class="adv-description">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+          </div>
+          <div class="food">
+            <img src="img/icon-food.svg" width="74" height="70" alt="Еда">
+            <h3>Еда</h3>
+            <p class="adv-description">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+          </div>
+          <div class="souvenires">
+            <img src="img/icon-souvenires.svg" width="64" height="76" alt="Сувениры">
+            <h3>Сувениры</h3>
+            <p class="adv-discription">Не только китайского, но и местного<br>производства!</p>
+          </div>
+        </div>
+        <div class="white-font">
+          <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <h3>Там есть<br>мост дьявола</h3>
+          <span class="numbers">- №2 -</span><br>
+          <p class="adv-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+        </div>
+      </section> -->
 
         <!-- Список преимуществ -->
 
-      </section>
+
 
       <div class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
@@ -44,6 +74,31 @@
       </div>
 
       <div class="hotel-search-form">
+        <form action="#" method="post">
+          <div class="in-out-dates">
+            <label>
+              Дата заезда:
+              <input type="date" name="calendar">
+            </label><br>
+            <label>
+              Дата выезда:
+              <input type="date" name="calendar">
+            </label><br>
+          </div>
+        <div class="people-quantity">
+          <label>Взрослые:
+            <span class="minus">-</span>
+            <input type="text" value="2" size="1"/>
+            <span class="plus">+</span>
+          </label>
+          <label>Дети:
+            <span class="minus">-</span>
+            <input type="text" value="0" size="1"/>
+            <span class="plus">+</span>
+          </label>
+        </div>
+        <input type="submit" name="search" value="Найти">
+      </form>
 
         <!-- Форма поиска гостиниц -->
 
@@ -53,7 +108,7 @@
 
       <!-- map -->
 
-    </div>
+      </div>
 
     </main>
 
@@ -69,7 +124,7 @@
       <p class="footer-copyright">
         Website by
           <a class="dev-button" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/dev-logo.jpg" width="60" height="36" alt="HTML Academy">
+            <img src="img/dev-logo.svg" width="115" height="41" alt="HTML Academy">
           </a>
       </p>
     </footer>

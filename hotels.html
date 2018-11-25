@@ -10,7 +10,7 @@
 
     <header>
       <a class="header-logo" href="index.html">
-        <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
       </a>
       <nav>
         <ul class="site-navigation">
@@ -23,14 +23,74 @@
     </header>
 
     <main>
-
-      <h1 class="visually-hidden">Параметры выбора жилья</h1>
-
-      <section class="filters">
-
-        <!-- Форма сортировки -->
-
+    <h1 class="visually-hidden">Выбор жилья</h1>
+    <section class="filters">
+      <h2 class="visually-hidden">Параметры выбора жилья</h2>
+      <form class="filter" action="#" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="parking" id="filter-parking">
+            <label for="filter-parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="wi-fi" id="filter-wifi">
+            <label for="filter-wifi">wi-fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+            <label for="filter-hotel">Гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+            <label for="filter-motel">Мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-checkbox" type="checkbox" name="appartment" id="filter-appartment" checked>
+            <label for="filter-appartment">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Стоимость в сутки (р):</legend>
+        <div class="price-range">
+          <label for="price-min">От</label>
+          <input type="text" id="price-min" name="price-range-min" value="0">
+        </div>
+        <div class="price-range">
+          <label for="price-max">До</label>
+          <input type="text" id="price-max" name="price-range-max" value="3000">
+        </div>
+        <div class="price-slider-min">
+          <input class="slider" type="range" name="slider-min" value="">
+        </div>
+        <div class="price-slider-max">
+          <input class="slider" type="range" name="slider-max" value="">
+        </div>
+      </fieldset>
+      <button type="submit" class="filter-button">Показать</button>
+      </form>
       </section>
+      <section class="filter-results">
+        <p class="found">Найдено: 3</p>
+        <div class="sorting">
+          <p>Сортировка:</p>
+          <ul>
+            <li>По цене</li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </div>
 
       <section class="hotels">
 
@@ -53,15 +113,7 @@
               <a class="button button-dark" href="#">Забронировать</a>
             </p>
             </div>
-            <p class="hotel-item-rating">
-              <span class="hotel-item-stars">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-              </span>
-              Рейтинг: 8,5
-            </p>
+            <p class="hotel-item-rating">Рейтинг: 8,5</p>
           </li>
 
           <li class="hotel-item">
@@ -79,14 +131,7 @@
               <a class="button button-dark" href="#">Забронировать</a>
             </p>
             </div>
-            <p class="hotel-item-rating">
-              <span class="hotel-item-stars">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-                <img src="img/star.svg" width="18" height="17" alt="звезда">
-              </span>
-              Рейтинг: 8,9
-            </p>
+            <p class="hotel-item-rating">Рейтинг: 8,9</p>
           </li>
 
           <li class="hotel-item">
@@ -104,19 +149,13 @@
                 <a class="button button-dark" href="#">Забронировать</a>
               </p>
             </div>
-            <p class="hotel-item-rating">
-              <span class="hotel-item-stars">
-              <img src="img/star.svg" width="18" height="17" alt="звезда">
-              <img src="img/star.svg" width="18" height="17" alt="звезда">
-              </span>
-              Рейтинг: 9,2
-            </p>
+            <p class="hotel-item-rating">Рейтинг: 9,2</p>
           </li>
 
         </ul>
 
       </section>
-
+      </section>
     </main>
 
     <footer>

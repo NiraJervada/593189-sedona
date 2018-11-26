@@ -26,10 +26,10 @@
     <h1 class="visually-hidden">Выбор жилья</h1>
     <section class="filters">
       <h2 class="visually-hidden">Параметры выбора жилья</h2>
-      <form class="filter" action="#" method="get">
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="hotel-filter-group">
+        <legend class="hotel-filter-title">Инфраструктура:</legend>
+        <ul class="hotel-filter-list">
           <li class="filter-option">
             <input class="filter-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
             <label for="filter-pool">Бассейн</label>
@@ -44,8 +44,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Тип жилья:</legend>
+      <fieldset class="hotel-filter-group">
+        <legend class="hotel-filter-title">Тип жилья:</legend>
         <ul>
           <li class="filter-option">
             <input class="filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -61,8 +61,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
-        <legend>Стоимость в сутки (р):</legend>
+      <fieldset class="hotel-filter-cost">
+        <legend class="hotel-filter-title">Стоимость в сутки (р):</legend>
         <div class="price-range">
           <label for="price-min">От</label>
           <input type="text" id="price-min" name="price-range-min" value="0">
@@ -71,28 +71,31 @@
           <label for="price-max">До</label>
           <input type="text" id="price-max" name="price-range-max" value="3000">
         </div>
-        <div class="price-slider-min">
-          <input class="slider" type="range" name="slider-min" value="">
-        </div>
-        <div class="price-slider-max">
-          <input class="slider" type="range" name="slider-max" value="">
-        </div>
+        <!-- здесь слайдер -->
       </fieldset>
-      <button type="submit" class="filter-button">Показать</button>
+      <button class="hotel-filter-button" type="submit">Показать</button>
       </form>
       </section>
+
       <section class="filter-results">
-        <p class="found">Найдено: 3</p>
-        <div class="sorting">
-          <p>Сортировка:</p>
-          <ul>
-            <li>По цене</li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
+        <h2 class="visually-hidden">Результаты поиска жилья</h2>
+        <div class="sort-list-wrap">
+          <b class="sort-title">Найдено: 3</b>
+          <div class="sorting">
+            <p>Сортировка:</p>
+            <ul class="sort-list">
+              <li><a>По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+          <div class="sort-arrows">
+            <a class="arrow arrow-up" href="#"></a>
+            <a class="arrow arrow-down active" href="#"></a>
+          </div>
         </div>
 
-      <section class="hotels">
+      <div class="hotels">
 
         <h2 class="visually-hidden">Список отелей</h2>
 
@@ -113,7 +116,12 @@
               <a class="button button-dark" href="#">Забронировать</a>
             </p>
             </div>
-            <p class="hotel-item-rating">Рейтинг: 8,5</p>
+            <p class="hotel-item-rating">
+              <div class="hotel-item-stars">
+
+              </div>
+              Рейтинг: 8,5
+            </p>
           </li>
 
           <li class="hotel-item">
@@ -131,7 +139,12 @@
               <a class="button button-dark" href="#">Забронировать</a>
             </p>
             </div>
-            <p class="hotel-item-rating">Рейтинг: 8,9</p>
+            <p class="hotel-item-rating">
+              <div class="hotel-item-stars">
+
+              </div>
+              Рейтинг: 8,9
+            </p>
           </li>
 
           <li class="hotel-item">
@@ -149,12 +162,17 @@
                 <a class="button button-dark" href="#">Забронировать</a>
               </p>
             </div>
-            <p class="hotel-item-rating">Рейтинг: 9,2</p>
+            <p class="hotel-item-rating">
+              <div class="hotel-item-stars">
+
+              </div>
+              Рейтинг: 9,2
+            </p>
           </li>
 
         </ul>
 
-      </section>
+      </div>
       </section>
     </main>
 

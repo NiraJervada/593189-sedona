@@ -24,48 +24,66 @@
 
     <main>
       <div class="welcome">
-        <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">
+        <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
       </div>
       <div class="intro">
         <h1 class="page-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
 
-      <!-- <section class="advantages">
-        <div class="white-font">
-          <h3>Настоящий<br>городок</h3>
-          <span class="numbers">- №1 -</span><br>
-          <p class="adv-description">Седона - не аттракцион для туристов,<br>там течёт своя жизнь</p>
-          <img src="img/sedona-town.jpg" width="800" height="256" alt="Городок Седона">
-        </div>
-        <div class="black-font">
-          <div class="housing">
-            <img src="img/icon-house.svg" width="75" height="72" alt="Жильё">
-            <h3>Жильё</h3>
-            <p class="adv-description">Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
-          </div>
-          <div class="food">
-            <img src="img/icon-food.svg" width="74" height="70" alt="Еда">
-            <h3>Еда</h3>
-            <p class="adv-description">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
-          </div>
-          <div class="souvenires">
-            <img src="img/icon-souvenires.svg" width="64" height="76" alt="Сувениры">
-            <h3>Сувениры</h3>
-            <p class="adv-discription">Не только китайского, но и местного<br>производства!</p>
-          </div>
-        </div>
-        <div class="white-font">
-          <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-          <h3>Там есть<br>мост дьявола</h3>
-          <span class="numbers">- №2 -</span><br>
-          <p class="adv-description">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-        </div>
-      </section> -->
+      <section class="features">
 
-        <!-- Список преимуществ -->
+        <ul class="features-list">
+          <li class="features-item">
+            <div class="features-text">
+              <h3 class="features-title">Настоящий городок</h3>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="features-image">
+              <img src="img/sedona-town.jpg" width="800" height="256" alt="Городок Седона">
+            </div>
+          </li>
+          <li class="features-item">
+            <div class="features-image">
+              <img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дьявола в Седоне">
+            </div>
+            <div class="features-text">
+              <h3 class="features-title">Там есть мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Небольшая площадь</h3>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title">Мало туристов</h3>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
 
+            <ul class="features-list icons-list">
+              <li class="feature-item housing">
+                <h3 class="features-title">Жильё</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="feature-item food">
+                <h3 class="features-title">Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="feature-item souvenires">
+                <h3 class="features-title">Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
 
+          </li>
+
+        </ul>
+
+      </section>
 
       <div class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
@@ -75,39 +93,36 @@
 
       <div class="hotel-search-form">
         <form action="#" method="post">
-          <div class="in-out-dates">
-            <label>
-              Дата заезда:
-              <input type="date" name="calendar">
-            </label><br>
-            <label>
-              Дата выезда:
-              <input type="date" name="calendar">
-            </label><br>
-          </div>
-        <div class="people-quantity">
-          <label>Взрослые:
-            <span class="minus">-</span>
-            <input type="text" value="2" size="1"/>
-            <span class="plus">+</span>
-          </label>
-          <label>Дети:
-            <span class="minus">-</span>
-            <input type="text" value="0" size="1"/>
-            <span class="plus">+</span>
-          </label>
-        </div>
-        <input type="submit" name="search" value="Найти">
-      </form>
-
-        <!-- Форма поиска гостиниц -->
-
+          <p>
+            <label for="checkin">Дата заезда:
+              <input type="date" id="checkin" name="calendar" placeholder="24 апреля 2017">
+              <button type="button" name="calendar"><span class="visually-hidden">Календарь</span></button>
+            </label>
+          </p>
+          <p>
+            <label for="checkout">Дата выезда:
+              <input type="date" id="checkout" name="calendar" placeholder="4 июля 2017">
+              <button type="button" name="calendar"><span class="visually-hidden">Календарь</span></button>
+            </label>
+          </p>
+          <p class="people-quantity">
+            <label for="adults">Взрослые:</label>
+              <button class="minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+              <input type="text" id="adults" value="2">
+              <button class="plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+          </p>
+          <p class="people-quantity">
+            <label for="kids">Дети:</label>
+              <button class="minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+              <input type="text" id="kids" value="0">
+              <button class="plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+          </p>
+          <button class="hotel-serch-button" type="submit" name="search">Найти</button>
+        </form>
       </div>
 
-      <div>
-
-      <!-- map -->
-
+      <div class="map">
+        <img src="img/map.jpg" alt="Седона, штат Аризона, США" width="1200" height="593">
       </div>
 
     </main>

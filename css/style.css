@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +18,6 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 1px;
-
 }
 
 a {
@@ -19,20 +27,19 @@ a {
 .welcome {
   background-color: #f2f2f2;
   background-image: url("../img/background-mountains.jpg");
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.inner-page {
+.filters {
   background-image: url("../img/filter-background.jpg");
-  background-position: top center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .site-navigation {
   font-size: 14px;
   font-weight: 700;
-  line-height: inherit;
   color: #000000;
   list-style: none;
 
@@ -52,7 +59,7 @@ a {
   color: #b2b2b2;
 }
 
-.site-navigation .site-navigation-current {
+.site-navigation-current {
   color: #766357;
 }
 
@@ -71,7 +78,6 @@ a {
   font-weight: 400;
   line-height: inherit;
   text-align: center;
-  color: inherit;
 
   background-color: #ffffff
 }
@@ -124,6 +130,7 @@ a {
 }
 
 .hotel-item-button {
+  display: inline-block;
   font-size: 14px;
   text-align: center;
   vertical-align: middle;
@@ -150,18 +157,18 @@ a {
   background-color: #503e33;
 }
 
-.button-light {
+.button {
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
-.button-light:hover,
-.button-light:focus {
+.button:hover,
+.button:focus {
   background-color: #669ec0;
 }
 
-.button-light:active {
+.button:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
@@ -171,14 +178,11 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
 input {
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   color: #000000;
 
   background-color: transparent;
@@ -186,11 +190,12 @@ input {
 
 input,
 input:hover {
-  border: none;
+  border: 2px solid #ffffff;
 }
 
  input:focus {
-   border-color: 2px solid #e5e5e5;
+   outline: none;
+   border: 2px solid #e5e5e5;
  }
 
  .checkin button,
@@ -233,13 +238,15 @@ input:hover {
   background-color: #000000;
 }
 
+       /* переделать кнопку!!!! */
+       
 .hotel-filter-button {
-  font-size: 14px
+  font-size: 14px;
   color: #ffffff;
-
+  text-transform: uppercase;
+  outline: none;
   border: 2px;
   border-color: #ffffff;
-  background-color: transparent;
 }
 
 .sort-list-wrap {
@@ -289,7 +296,7 @@ input:hover {
   color: #000000;
 }
 
-footer {
+.page-footer {
   color: #000000;
 
   background-color: #ffffff;
@@ -302,11 +309,11 @@ footer {
   color: #000000;
 }
 
-.social-list {
+.page-footer-social {
   text-align: center;
 }
 
-.social-list ul {
+.page-footer-social ul {
   list-style: none;
 }
 
@@ -341,7 +348,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-.footer-copyright {
+.page-footer-copyright {
   text-align: center;
 }
 

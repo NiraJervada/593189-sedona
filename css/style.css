@@ -18,6 +18,14 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 a {
@@ -25,10 +33,18 @@ a {
 }
 
 .welcome {
-  background-color: #f2f2f2;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.welcome-logo {
+  margin-top: 76px;
+  margin-bottom: 80px;
 }
 
 .filters {
@@ -38,12 +54,17 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
+
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   list-style: none;
 
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .site-navigation a {
@@ -73,6 +94,12 @@ a {
   background-color: #ffffff
 }
 
+.intro {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
 .intro p {
   font-size: 14px;
   font-weight: 400;
@@ -82,6 +109,16 @@ a {
   background-color: #ffffff
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.features-item {
+  width: 400px;
+}
 .features-title {
   font-size: 21px;
 }
@@ -93,11 +130,8 @@ a {
 .features-text:first-child,
 .features-text:nth-child(2) {
   color: #ffffff;
+  line-height: 21px;
   background-color: #81b3d2;
-}
-
-.features-list {
-  list-style: none;
 }
 
 .hotel-search-title {
@@ -239,7 +273,7 @@ input:hover {
 }
 
        /* переделать кнопку!!!! */
-       
+
 .hotel-filter-button {
   font-size: 14px;
   color: #ffffff;

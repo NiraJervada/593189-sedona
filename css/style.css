@@ -334,7 +334,7 @@ a.site-navigation-current {
      /* ------------hotel search------------- */
 
 .hotel-search {
-  padding-top: 50px;
+  padding-top: 52px;
 }
 
 .hotel-search-title {
@@ -351,7 +351,7 @@ a.site-navigation-current {
   width: 486px;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 /* ------------------кнопки------------------- */
@@ -419,12 +419,12 @@ a.site-navigation-current {
 .hotel-form-button {
   width: 100%;
   padding: 18px 0 17px;
-  margin-top: 20px;
+  margin-top: 22px;
  }
 
 /* -----------hotel search form-------------- */
 
-}
+
 .hotel-search-form {
   position: absolute;
   top: 0;
@@ -746,7 +746,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 }
 
 .filter-range-title {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 
   font-weight: bold;
   font-size: 16px;
@@ -857,7 +857,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 .button-transparent {
   display: block;
-  margin: 0 auto;
+  margin-left: 84px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -960,7 +960,7 @@ input[type="checkbox"]:not(:checked) + label:after {
 
 .arrow {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 3px;
 
   font-size: 0;
 
@@ -1194,6 +1194,8 @@ a.hotel-item-button {
           align-items: center;
   width: 150px;
   padding: 0;
+  padding-top: 17px;
+  margin: 0;
   margin-left: 125px;
   margin-right: 125px;
 
